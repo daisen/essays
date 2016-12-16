@@ -6,9 +6,9 @@ grammar_cjkRuby: true
 ***
 ## 环境
 
-本文操作系统: CentOS 7.2.1511 x86_64
-MySQL 版本: 5.7.17
-安装媒介： rpm-bundle.tar
+* 本文操作系统: CentOS 7.2.1511 x86_64
+* MySQL 版本: 5.7.17
+* 安装媒介： rpm-bundle.tar
 
 ## 卸载系统自带的 mariadb-lib
 
@@ -72,4 +72,4 @@ mysql -uRoot -p
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!'
 ```
 `MyNewPass4! `是你的密码
-当然如果想要被别的客户端访问需要,把`localhost`改为对方IP,如果是全部机器可访问,可以修改为`%`
+当然,如果想要被别的客户端访问需要把`localhost`改为对方IP,如果是全部机器可访问,可以修改为`%`
